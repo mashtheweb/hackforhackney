@@ -1,0 +1,189 @@
+<!DOCTYPE HTML>
+<!--
+	HACKNEY TXT BOARD by MASH THE WEB
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>No Sidebar - HACKNEY TXT BOARD by MASH THE WEB</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
+		<script src="js/jquery.min.js"></script>
+		<script src="js/jquery.dropotron.min.js"></script>
+		<script src="js/skel.min.js"></script>
+		<script src="js/skel-layers.min.js"></script>
+		<script src="js/init.js"></script>
+		<noscript>
+			<link rel="stylesheet" href="css/skel.css" />
+			<link rel="stylesheet" href="css/style.css" />
+			<link rel="stylesheet" href="css/style-desktop.css" />
+		</noscript>
+		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
+	</head>
+	<body>
+
+		<!-- Header -->
+			<header id="header">
+				<div class="logo container">
+					<div>
+						<h1><a href="index.html" id="logo">HACKNEY TXT BOARD</a></h1>
+						<p>A visual map and document web application for statutory notices</p>
+					</div>
+				</div>
+			</header>
+
+		<!-- Nav -->
+			<nav id="nav" class="skel-layers-fixed">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li>
+						<a href="">Statutory Notices</a>
+						<ul>
+							<li><a href="list.html">List of Statutory Notices</a></li>
+							<li><a href="list.html">Last Week</a></li>
+							<li><a href="list.html">2 Weeks Ago</a></li>
+							<li><a href="list.html">3 Weeks Ago</a></li>
+							<li><a href="list.html">4 Weeks Ago</a></li>
+							<li><a href="list.html">5 Weeks Ago</a></li>
+							<li><a href="list.html">6 Weeks Ago</a></li>
+						</ul>
+					</li>
+					<li><a href="map.html">Map</a></li>
+					<li><a href="list2.html">Weekly Statutory Notices</a></li>
+					<li><a href="http://openlylocal.com/committees/420-Shoreditch-Neighbourhood-Committee">Documents</a></li>
+					<li class="current"><a href="alerts.html">My Location</a></li>
+				</ul>
+			</nav>
+			
+		<!-- Main -->
+			<div id="main-wrapper">
+				<div id="main" class="container">
+					<div class="row">
+						<div class="12u">
+							<div class="content">
+							
+								<!-- Content -->
+						
+									<article class="box page-content">
+
+										<header>
+											<h2>Alerts</h2>
+											<p>This is your personalised alerts around your area</p>
+											<ul class="meta">
+												<li class="icon fa-clock-o">5 days ago</li>
+												<li class="icon fa-comments"><a href="#">1,024</a></li>
+											</ul>
+										</header>
+
+										<section>
+											<p>
+												This shows a map of local statutory notices.
+											</p>
+											<iframe width='100%' height='500px' frameBorder='0' src='https://a.tiles.mapbox.com/v4/mashtheweb.k7dbl08j/attribution,zoompan,zoomwheel,geocoder,share.html?access_token=pk.eyJ1IjoibWFzaHRoZXdlYiIsImEiOiJDQnNTZFFNIn0.WxFEU2bHffGsBQIMjs2pZg'></iframe>
+											<p>
+												<ul class="actions">
+													<li><a href="http://www.afreesms.com/intl/united-kingdom" class="button big">Send SMS</a></li>
+												</ul>
+											</p>
+										</section>
+										
+										<section>
+											<p>
+												This shows a list of local statutory notices in your area.
+											</p>
+											<p>See <a href="http://what3words.com/monday.votes.crowned">here</a> for your closest neigbour with planned permissions on proerty</p>
+											<p>
+											<!-- https://www.googleapis.com/fusiontables/v1/query?sql=SELECT+*+FROM+1n52DcnloY6QWovNACnCCsapKjQh2X-zq36IJ2n71+WHERE+Location+LIKE+'%25Graham%25'+ORDER+BY+Location+DESC&hdrs=true&typed=false-->
+											<iframe style="margin:50px;" width="850" height="850" scrolling="yes" frameborder="no" src="https://www.google.com/fusiontables/embedviz?viz=CARD&amp;q=SELECT+*+FROM+1n52DcnloY6QWovNACnCCsapKjQh2X-zq36IJ2n71+WHERE+Location+LIKE+'%25Graham%25'+ORDER+BY+Location+DESC&amp;tmplt=3&amp;cpr=2"></iframe>
+											</p>
+											<p>
+												<ul class="actions">
+													<li><a href="http://www.afreesms.com/intl/united-kingdom" class="button big">Send SMS</a></li>
+												</ul>
+											</p>
+										</section>
+										
+										<section>
+											<h3>More intriguing information</h3>
+											<p>
+												Impact Information of the following properties within your area
+											</p>
+											<p>
+											<img src="impact.png"></img>
+											25 = Very Small Impact
+											50 = Small Impact
+											100 = Medium Impact
+											200 = Large Impact
+											300 = Direct Impact
+											</p>
+										</section>
+
+										<section>
+											<h3>So in conclusion ...</h3>
+											<p>
+												There are 1-4 local statutory notices around your area.
+											</p>
+											<p>
+												50% of the total are those of extensions. 25% are indoor related. 25% are linked to landscape.
+											</p>
+										</section>
+
+									</article>
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		<!-- Footer -->
+			<footer id="footer" class="container">
+				<div class="row 200%">
+					<div class="12u">
+
+						<!-- About -->
+							<section>
+								<h2 class="major"><span>What's this about?</span></h2>
+								<p>
+									This is <strong>HACKNEY TXT BOARD</strong>, a statutory notice web application that uses responsive site design created by
+									<a href="http://www.mashthweb.com">MASH THE WEB</a> to allow the people of Hackney to 
+									search any planning permissions near their home within the Hackney Council area via by the map or by search table. 
+									They can also search any relevent documentations from the council site aswell as search any comittee meeting documentations relating to these.
+									That's basically it :)
+								</p>
+							</section>
+
+					</div>
+				</div>
+				<div class="row 200%">
+					<div class="12u">
+
+						<!-- Contact -->
+							<section>
+								<h2 class="major"><span>Get in touch</span></h2>
+								<ul class="contact">
+									<li><a class="icon fa-facebook" href="#"><span class="label">Facebook</span></a></li>
+									<li><a class="icon fa-twitter" href="#"><span class="label">Twitter</span></a></li>
+									<li><a class="icon fa-instagram" href="#"><span class="label">Instagram</span></a></li>
+									<li><a class="icon fa-dribbble" href="#"><span class="label">Dribbble</span></a></li>
+									<li><a class="icon fa-google-plus" href="#"><span class="label">Google+</span></a></li>
+								</ul>
+							</section>
+					
+					</div>
+				</div>
+
+				<!-- Copyright -->
+					<div id="copyright">
+						<ul class="menu">
+							<li>&copy; Untitled. All rights reserved</li><li>Design: <a href="http://html5up.net">MASH THE WEB</a></li>
+						</ul>
+					</div>
+
+			</footer>
+
+	</body>
+</html>

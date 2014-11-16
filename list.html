@@ -1,0 +1,253 @@
+<!DOCTYPE HTML>
+<!--
+	HACKNEY TXT BOARD by MASH THE WEB
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>List of Statutory Notice - HACKNEY TXT BOARD by MASH THE WEB</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
+		<script src="js/jquery.min.js"></script>
+		<script src="js/jquery.dropotron.min.js"></script>
+		<script src="js/skel.min.js"></script>
+		<script src="js/skel-layers.min.js"></script>
+		<script src="js/init.js"></script>
+		<noscript>
+			<link rel="stylesheet" href="css/skel.css" />
+			<link rel="stylesheet" href="css/style.css" />
+			<link rel="stylesheet" href="css/style-desktop.css" />
+		</noscript>
+		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
+	</head>
+	<body>
+
+		<!-- Header -->
+			<header id="header">
+				<div class="logo container">
+					<div>
+						<h1><a href="index.html" id="logo">HACKNEY TXT BOARD</a></h1>
+						<p>A visual map and document web application for statutory notices</p>
+					</div>
+				</div>
+			</header>
+
+		<!-- Nav -->
+			<nav id="nav" class="skel-layers-fixed">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li class="current">
+						<a href="">Statutory Notices</a>
+						<ul>
+							<li><a href="list.html">List of Statutory Notices</a></li>
+							<li><a href="list.html">Last Week</a></li>
+							<li><a href="list.html">2 Weeks Ago</a></li>
+							<li><a href="list.html">3 Weeks Ago</a></li>
+							<li><a href="list.html">4 Weeks Ago</a></li>
+							<li><a href="list.html">5 Weeks Ago</a></li>
+							<li><a href="list.html">6 Weeks Ago</a></li>
+						</ul>
+					</li>
+					<li><a href="map.html">Map</a></li>
+					<li><a href="list2.html">Weekly Statutory Notices</a></li>
+					<li><a href="documents.html">Documents</a></li>
+					<li><a href="alerts.html">Alerts</a></li>
+				</ul>
+			</nav>
+		
+		<!-- Main -->
+			<div id="main-wrapper">
+				<div id="main" class="container">
+					<div class="row">
+						<div class="12u">
+							<div class="content">
+							
+								<!-- Content -->
+						
+									<article class="box page-content">
+
+										<header>
+											<h2>List Of Statutory Notices</h2>
+											<ul class="meta">
+												<li class="icon fa-clock-o">7 days ago</li>
+												<li class="icon fa-comments"><a href="#">1,024</a></li>
+											</ul>
+										</header>
+
+										<section>
+											<p>
+												Here is the full list of statutory notices
+											</p>
+											   <iframe style="margin:50px;" width="800" height="1000" scrolling="yes" frameborder="no" src="https://www.google.com/fusiontables/embedviz?viz=GVIZ&amp;t=TABLE&amp;q=select+col0%2C+col1%2C+col2%2C+col3%2C+col4+from+1n52DcnloY6QWovNACnCCsapKjQh2X-zq36IJ2n71&amp;containerId=googft-gviz-canvas"></iframe>
+											   <div id="content"></div>
+												<script>
+												var item;
+												function handler(response) {
+												  for (var i = 0; i < response.items.length; i++) {
+												    item = response.items[i];
+													// Either show the body or the automatic columns of the template
+													if (item.body) {
+													  document.getElementById("content").innerHTML += "<br>" + item.body;
+													} else {
+													  for (var j = 0; j < item.automaticColumnNames.length; j++) {
+														document.getElementById("content").innerHTML += "<br>" + item.automaticColumnNames[j];
+													  }
+													}
+												  }
+												}
+												</script>
+												<script src="https://www.googleapis.com/fusiontables/v1/tables/1n52DcnloY6QWovNACnCCsapKjQh2X-zq36IJ2n71/templates?callback=handler&key=AIzaSyBOBocmVTPz6SEB2ZeGVvGNpIwlvD2krwc"></script>
+										</section>
+
+									</article>
+
+							</div>
+						</div>
+					</div>
+					<div class="row 200%">
+						<div class="12u">
+
+							<!-- Features -->
+								<section class="box features">
+									<h2 class="major"><span>Map Of Statutory Notices in Hackney</span></h2>
+									<div>
+										<div class="row">
+											<div class="3u">
+												
+												<style type="text/css">
+												html, body, #googft-mapCanvas {
+												  height: 500px;
+												  margin: 10px;
+												  padding: 0;
+												  width: 800px;
+												  text-align:center;
+												}
+												</style>
+
+												<script type="text/javascript" src="https://maps.google.com/maps/api/js?sensor=false&amp;v=3"></script>
+
+												<script type="text/javascript">
+												  function initialize() {
+													google.maps.visualRefresh = true;
+													var isMobile = (navigator.userAgent.toLowerCase().indexOf('android') > -1) ||
+													  (navigator.userAgent.match(/(iPod|iPhone|iPad|BlackBerry|Windows Phone|iemobile)/));
+													if (isMobile) {
+													  var viewport = document.querySelector("meta[name=viewport]");
+													  viewport.setAttribute('content', 'initial-scale=1.0, user-scalable=no');
+													}
+													var mapDiv = document.getElementById('googft-mapCanvas');
+													mapDiv.style.width = isMobile ? '100%' : '500px';
+													mapDiv.style.height = isMobile ? '100%' : '300px';
+													var map = new google.maps.Map(mapDiv, {
+													  center: new google.maps.LatLng(51.55867569630588, -0.047818123034630844),
+													  zoom: 12,
+													  mapTypeId: google.maps.MapTypeId.ROADMAP
+													});
+													map.controls[google.maps.ControlPosition.RIGHT_BOTTOM].push(document.getElementById('googft-legend-open'));
+													map.controls[google.maps.ControlPosition.RIGHT_BOTTOM].push(document.getElementById('googft-legend'));
+
+													layer = new google.maps.FusionTablesLayer({
+													  map: map,
+													  heatmap: { enabled: false },
+													  query: {
+														select: "col2",
+														from: "1n52DcnloY6QWovNACnCCsapKjQh2X-zq36IJ2n71",
+														where: ""
+													  },
+													  options: {
+														styleId: 2,
+														templateId: 2
+													  }
+													});
+
+													if (isMobile) {
+													  var legend = document.getElementById('googft-legend');
+													  var legendOpenButton = document.getElementById('googft-legend-open');
+													  var legendCloseButton = document.getElementById('googft-legend-close');
+													  legend.style.display = 'none';
+													  legendOpenButton.style.display = 'block';
+													  legendCloseButton.style.display = 'block';
+													  legendOpenButton.onclick = function() {
+														legend.style.display = 'block';
+														legendOpenButton.style.display = 'none';
+													  }
+													  legendCloseButton.onclick = function() {
+														legend.style.display = 'none';
+														legendOpenButton.style.display = 'block';
+													  }
+													}
+												  }
+
+												  google.maps.event.addDomListener(window, 'load', initialize);
+												</script>
+												  <div id="googft-mapCanvas"></div>
+												
+											</div>
+										</div>
+										<div class="row">
+											<div class="12u">
+												<ul class="actions">
+													<li><a href="index.html" class="button big">Main Page</a></li>
+													<li><a href="map.html" class="button alt big">Map</a></li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</section>
+
+						</div>
+					</div>
+				</div>
+			</div>
+
+		<!-- Footer -->
+			<footer id="footer" class="container">
+				<div class="row 200%">
+					<div class="12u">
+
+						<!-- About -->
+							<section>
+								<h2 class="major"><span>What's this about?</span></h2>
+								<p>
+									This is <strong>HACKNEY TXT BOARD</strong>, a statutory notice web application that uses responsive site design created by
+									<a href="http://www.mashthweb.com">MASH THE WEB</a> to allow the people of Hackney to 
+									search any planning permissions near their home within the Hackney Council area via by the map or by search table. 
+									They can also search any relevent documentations from the council site aswell as search any comittee meeting documentations relating to these.
+									That's basically it :)
+								</p>
+							</section>
+
+					</div>
+				</div>
+				<div class="row 200%">
+					<div class="12u">
+
+						<!-- Contact -->
+							<section>
+								<h2 class="major"><span>Get in touch</span></h2>
+								<ul class="contact">
+									<li><a class="icon fa-facebook" href="#"><span class="label">Facebook</span></a></li>
+									<li><a class="icon fa-twitter" href="#"><span class="label">Twitter</span></a></li>
+									<li><a class="icon fa-instagram" href="#"><span class="label">Instagram</span></a></li>
+									<li><a class="icon fa-dribbble" href="#"><span class="label">Dribbble</span></a></li>
+									<li><a class="icon fa-google-plus" href="#"><span class="label">Google+</span></a></li>
+								</ul>
+							</section>
+					
+					</div>
+				</div>
+
+				<!-- Copyright -->
+					<div id="copyright">
+						<ul class="menu">
+							<li>&copy; Untitled. All rights reserved</li><li>Design: <a href="http://html5up.net">MASH THE WEB</a></li>
+						</ul>
+					</div>
+
+			</footer>
+
+	</body>
+</html>
